@@ -111,6 +111,7 @@ def camera(self):
     start = timer()
     self.say('Press [ESC] to quit demo')
     # Loop through frames
+    file = 0
     while camera.isOpened():
         elapsed += 1
         _, frame = camera.read()
